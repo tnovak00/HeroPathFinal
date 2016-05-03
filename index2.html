@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+	<head>
+         <meta charset="utf-8">
+        <title>A Hero's Path</title>
+        <script src="phaser.min.js"></script>
+        <script src="src/boot.js"></script>
+		<script src="src/preload.js"></script>
+		<script src="src/gametitle.js"></script>
+		<script src="src/thegame.js"></script>
+        <script src ="src/level1.js"></script>
+		<script src="src/gameover.js"></script>	
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+		<script>
+			(function() {
+				var game = new Phaser.Game(890, 600, Phaser.CANVAS, "game");
+				game.state.add("Boot",boot);
+				game.state.add("Preload",preload);
+				game.state.add("GameTitle",gameTitle);
+				game.state.add("TheGame",theGame);
+                game.state.add("Level1", theGame);
+                game.state.add("GameOver",gameOver);
+				game.state.start("Boot");
+			})();    
+		</script>
+    </head>
+    <div id="game"></div>
+<div id="readme">
+<h2>Dragon-changer</h2>
+<ul>
+
+<li><strong>High Concept:</strong>
+A young girl, Lucy, who loves candy and likes to ride her bike has the power to turn into a fire-breathing dragon named Sapphire.
+</li>
+
+<li><strong>Player Experience Goals:</strong>
+A cute and fun scrolling game that allows for increase in difficulty, but is still simple and easy enough for a young child. The Dragon-Changer aims to give the feeling as if you were a child again with a big imagination for fantasy.
+</li>
+
+<li><strong>Genre:</strong>
+2D side-scroller
+</li>
+
+<li><strong>Game play:</strong>
+The player controls Lucy as she bikes down the street. The player can move Lucy up, down, left and right using the arrow keys to collect candy or gems to increase their score and avoid the obstacles. The player can shoot as a dragon if they collect the nerf gun before the blue gem.
+</li>
+
+<li><strong>Prototype goal:</strong>
+Trying to integrate childlike imagination and themes into a game that's easy and fun enough for a 4-year old.
+</li>
+
+<li><strong>Features:</strong>
+The Dragon-Changer has two worlds that player alternates between. If the player loses their health as a dragon, they change back into a child and have a chance to try again to change back into a dragon, but if they lose all their child-health, their game is over. It allows for shooting if the player collects a specific item and has several different types of obstacles, one which has randomized pathing.
+</li>
+
+<li><strong>Setting/Premise:</strong>
+The city in which Lucy lives and rides her bike and the space fantasy world she is imagining as she turns into a big blue dragon.
+</li>
+
+<li><strong>Story:</strong>
+Lucy rides her bike down the street, gathering candy. When she finds the magical blue gems, she transforms into a magic dragon called Sapphire who can shoot fireballs in space and collect the mystical red diamonds.
+</li>
+
+<li><strong>Target Audience:</strong>
+Young children.
+</li>
+
+<li><strong>Play time:</strong>
+4-5 minutes. Has replay value.
+</li>
+
+<li><strong>Strategies:</strong>
+You'll want to collect the nerf gun before transforming into a dragon to have the best chance of staying alive as a dragon because you can destroy obstaces. The dragon gains more points than Lucy as a child because the red diamonds are worth more.
+</li>
+
+<li><strong>Prototype Assets:</strong>
+Prototype assets were taken from:
+https://gamedevacademy.org/how-to-make-an-infinitely-scrolling-game-with-phaser/
+http://phaser.io/examples/v2/time/basic-repeat-event
+http://phaser.io/examples/v2/tweens/interpolation
+http://phaser.io/tutorials/coding-tips-008
+    
+Sprites and images:
+http://www.spriters-resource.com/genesis_32x_scd/alisiadragoon/sheet/25621/
+http://www.spriters-resource.com/arcade/ghoulsnghosts/sheet/65818/
+http://www.spriters-resource.com/resources/sheets/21/22517.png
+http://www.spriters-resource.com/snes/joemac2/sheet/26519/
+http://gallerily.com/starry+sky+painting
+http://forum.unity3d.com/threads/wip-the-pixel-dead-2d-zombie-shooter-kit.308512/
+http://tail800.deviantart.com/gallery/
+http://makepixelart.com/artists/shagedelic/scary-monsters-and-nice-sprites
+http://www.spriters-resource.com/game_boy_advance/drilldozer/sheet/13221/
+http://orig14.deviantart.net/4f01/f/2012/071/d/6/pixel_nerf_gun_by_goodlyay-d4sique.png
+    
+Sound effects:
+https://www.freesound.org/people/pyro13djt/sounds/331938/   
+
+
+
+</li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+The Dragon-Changer is similar to many other Iphone/Android game runners (Like Temple Runner). I got my inspiration knowing my little cousins love playing those games on their Ipads.
+</li>
+
+</ul>
+</div>
+</body>
+</html>
